@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap&#39');
 :root{
-    --cor-de-fundo:#050f99;
-    --grifar:#545AFF;
+    --cor-de-fundo:#6b75ff;
+    --grifar:#373baf;
     --branco:#ffffff;
     --botao-ativo:#A885FF;
     --botao-inativo:#DCDDFF;
@@ -78,7 +78,7 @@ body {
 .contador{
     display: flex;
     justify-content: center;
-    flex wrap: wrap;
+    flex-wrap: wrap;
 }
 .contador-digito{
     padding: 0 16px;
