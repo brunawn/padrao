@@ -14,14 +14,14 @@ body {
        color: var(--branco);
        font-family:'Times New Roman', Times, serif;
 }
-.conteudoprincipal{
+.conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 .titulo-principal{
     text-align: left;
@@ -29,7 +29,7 @@ body {
     font-size: 32px;
 }
 .botao{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -75,9 +75,19 @@ body {
     color: var(--grifar);
     text-transform: uppercase;
 }
+.contador{
+    display: flex;
+    justify-content: center;
+    flex wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
 .contador-digito-numero{
     font-size: 80px;
-    margin: 20px;
+    margin: 0;
 }
 .contador-digito-texto{
     color: var(--grifar);
@@ -95,9 +105,4 @@ body {
     .botao:last-child{
         border-radius: 0 40px 0 0;
     }
-}
-.conteudo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
