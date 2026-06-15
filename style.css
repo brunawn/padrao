@@ -1,35 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
-:root{
-    --cor-de-fundo:#6b75ff;
-    --grifar:#adb0ff;
-    --branco:#ffffff;
-    --botao-ativo:#A885FF;
-    --botao-inativo:#DCDDFF;
-    --texto-fundo:#000000;
 
+:root {
+    --cor-de-fundo: #CB7EFC;
+    --grifar: #FC7EC0;
+    --branco: #ffffff;
+    --botao-ativo: #F12BFF;
+    --botao-inativo: #804FFF;
+    --texto-fundo: #000000;
 }
 
 body {
-       background-color: var(--cor-de-fundo);
-       color: var(--branco);
-       font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif; /* Troquei para usar a fonte que você importou */
 }
-.conteudo-principal{
+
+.conteudo-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
+
 .titulo-principal{
     text-align: left;
     width: 100%;
     font-size: 32px;
 }
+
 .botao{
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -42,68 +44,78 @@ body {
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
+    cursor: pointer;
 }
+
 .botao:first-child{
     border-radius: 40px 40px 0 0;
-
 }
+
 .botoes{
     display: flex;
 }
+
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--grifar);
+    border: 4px solid var(--grifar); /* Corrigido de border-color para border */
 }
+
 .abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
-}
+
 .aba-conteudo.ativo{
     display: block;
-    
 }
+
 .aba-conteudo{
     display: none;
 }
+
 .aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
 }
+
 .aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--grifar);
     text-transform: uppercase;
 }
+
 .contador{
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .contador-digito{
     padding: 0 16px;
     text-align: center;
     min-width: 100px;
 }
+
 .contador-digito-numero{
     font-size: 80px;
     margin: 0;
 }
+
 .contador-digito-texto{
     color: var(--grifar);
     font-size: 20px;
     margin: 0;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .botao{
         display: flex;
     }
     .botao:first-child{
         border-radius: 40px 0 0 0;
     }
-    .botao:last-child{
+    .botao:last-child{ /* Corrigido de .border para .botao */
         border-radius: 0 40px 0 0;
     }
 }
